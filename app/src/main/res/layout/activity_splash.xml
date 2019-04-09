@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.splash.SplashActivity"
+        android:gravity="center">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/test_your_knowledge"
+              android:background="@drawable/logo_rectangle"
+              android:fontFamily="sans-serif-black"
+              android:textSize="@dimen/splash_activity_text_size"
+              android:padding="@dimen/splash_activity_padding"
+              android:textAlignment="center"
+              android:textColor="@color/navy_blue_dark"/>
+
+</RelativeLayout>

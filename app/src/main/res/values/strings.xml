@@ -1,3 +1,42 @@
 <resources>
     <string name="app_name">TestYourKnowledge</string>
+    <string name="test_your_knowledge">Test your \n knowledge</string>
+
+        <string-array name="categories_array">
+            <item>General Knowledge</item> <!-- 9 -->
+            <item>Science and Nature</item> <!-- 17 -->
+            <item>Science: Computers</item> <!-- 18 -->
+            <item>Science: Mathematics</item> <!-- 19 -->
+            <item>Mythology</item> <!-- 20 -->
+            <item>Sports</item> <!-- 21 -->
+            <item>Geography</item> <!-- 22 -->
+            <item>History</item> <!-- 23 -->
+            <item>Politics</item> <!-- 24 -->
+            <item>Art</item> <!-- 25 -->
+            <item>Celebrities</item> <!-- 26 -->
+            <item>Animals</item> <!-- 27 -->
+            <item>Vehicles</item> <!-- 28 -->
+        </string-array>
+
+
+    <string-array name="difficulty_array">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+    
+    <string-array name="question_type_array">
+        <item>Multiple Choice</item>
+        <item>True / False</item>
+    </string-array>
+
+    <string-array name="number_of_questions_array">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+    </string-array>
+
+
 </resources>

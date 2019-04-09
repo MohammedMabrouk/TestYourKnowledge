@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_activity_text_size">36sp</dimen>
+    <dimen name="splash_activity_padding">30dp</dimen>
+    <dimen name="logo_rectangle_corner_radius">10dp</dimen>
+    <dimen name="activity_main_margin">16dp</dimen>
+    <dimen name="activity_main_column_padding">8dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+</resources>
