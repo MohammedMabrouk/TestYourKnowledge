@@ -1,31 +1,46 @@
 <resources>
     <string name="app_name">TestYourKnowledge</string>
     <string name="test_your_knowledge">Test your \n knowledge</string>
+    <string name="activity_main_category">Category</string>
+    <string name="activity_main_difficulty">Difficulty</string>
+    <string name="activity_main_questions_type">Questions Type</string>
+    <string name="activity_main_number_of_questions">Number of Questions</string>
+    <string name="activity_main_start">Start</string>
+    <string name="temp_question">Which of the following sports is not part of the triathlon?</string>
+    <string name="temp_answer1">Horse-Riding</string>
+    <string name="temp_answer2">Cycling</string>
+    <string name="temp_answer3">Swimming</string>
+    <string name="temp_answer4">Running</string>
+    <string name="back_btn_label">Back</string>
+    <string name="next_btn_label">Next</string>
 
-        <string-array name="categories_array">
-            <item>General Knowledge</item> <!-- 9 -->
-            <item>Science and Nature</item> <!-- 17 -->
-            <item>Science: Computers</item> <!-- 18 -->
-            <item>Science: Mathematics</item> <!-- 19 -->
-            <item>Mythology</item> <!-- 20 -->
-            <item>Sports</item> <!-- 21 -->
-            <item>Geography</item> <!-- 22 -->
-            <item>History</item> <!-- 23 -->
-            <item>Politics</item> <!-- 24 -->
-            <item>Art</item> <!-- 25 -->
-            <item>Celebrities</item> <!-- 26 -->
-            <item>Animals</item> <!-- 27 -->
-            <item>Vehicles</item> <!-- 28 -->
-        </string-array>
+    <string-array name="categories_array">
+        <item>Any Category</item>
+        <item>General Knowledge</item> <!-- 9 -->
+        <item>Science and Nature</item> <!-- 17 -->
+        <item>Science: Computers</item> <!-- 18 -->
+        <item>Science: Mathematics</item> <!-- 19 -->
+        <item>Mythology</item> <!-- 20 -->
+        <item>Sports</item> <!-- 21 -->
+        <item>Geography</item> <!-- 22 -->
+        <item>History</item> <!-- 23 -->
+        <item>Politics</item> <!-- 24 -->
+        <item>Art</item> <!-- 25 -->
+        <item>Celebrities</item> <!-- 26 -->
+        <item>Animals</item> <!-- 27 -->
+        <item>Vehicles</item> <!-- 28 -->
+    </string-array>
 
 
     <string-array name="difficulty_array">
+        <item>Any Difficulty</item>
         <item>Easy</item>
         <item>Medium</item>
         <item>Hard</item>
     </string-array>
-    
+
     <string-array name="question_type_array">
+        <item>Any Type</item>
         <item>Multiple Choice</item>
         <item>True / False</item>
     </string-array>
@@ -37,6 +52,11 @@
         <item>40</item>
         <item>50</item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_again_btn_label">Start Again</string>
+    <string name="result_tv">Result: 0/0</string>
 
 
 </resources>

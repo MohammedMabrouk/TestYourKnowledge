@@ -15,7 +15,7 @@ interface QuestionsService {
 
     @GET(".")
     fun getQuestions(@Query("amount") numberOfQuestions: Int,
-                     @Query("category") categoryId : Int,
+                     @Query("category") categoryId : String,
                      @Query("difficulty") difficulty : String,
                      @Query("type") type : String): Call<QuestionResponse>
 }

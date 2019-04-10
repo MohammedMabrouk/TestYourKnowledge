@@ -6,7 +6,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_margin="@dimen/activity_main_margin"
-        android:gravity="center_vertical"
+        android:gravity="center"
         tools:context=".ui.main.MainActivity">
 
 
@@ -21,10 +21,10 @@
         <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Category"
+                android:text="@string/activity_main_category"
                 android:textSize="18sp"
                 android:layout_weight="0.5"
-        android:textColor="@color/black"/>
+                android:textColor="@color/black"/>
 
         <Spinner
                 android:id="@+id/activity_main_spinner_category"
@@ -44,7 +44,7 @@
         <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Difficulty"
+                android:text="@string/activity_main_difficulty"
                 android:textSize="18sp"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"/>
@@ -67,7 +67,7 @@
         <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Questions Type"
+                android:text="@string/activity_main_questions_type"
                 android:textSize="18sp"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"/>
@@ -90,7 +90,7 @@
         <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Number of Questions"
+                android:text="@string/activity_main_number_of_questions"
                 android:textSize="18sp"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"/>
@@ -101,5 +101,13 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"/>
     </LinearLayout>
+
+
+    <Button
+            android:id="@+id/activity_main_start_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10dp"
+            android:text="@string/activity_main_start"/>
 
 </LinearLayout>

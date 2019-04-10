@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.questions.QuestionFragment"
+        android:orientation="vertical">
+    <TextView
+            android:id="@+id/question_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/temp_question"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/margin_10dp"/>
+
+    <Button
+            android:id="@+id/answer1_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/temp_answer1"
+            android:layout_marginBottom="@dimen/margin_8dp"/>
+
+    <Button
+            android:id="@+id/answer2_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/temp_answer2"
+            android:layout_marginBottom="@dimen/margin_8dp"/>
+
+    <Button
+            android:id="@+id/answer3_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/temp_answer3"
+            android:layout_marginBottom="@dimen/margin_8dp"/>
+
+    <Button
+            android:id="@+id/answer4_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/temp_answer4"
+            android:layout_marginBottom="@dimen/margin_8dp"/>
+</LinearLayout>

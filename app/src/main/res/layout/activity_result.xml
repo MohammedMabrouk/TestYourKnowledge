@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.result.ResultActivity"
+        android:layout_margin="@dimen/activity_main_margin">
+
+    <TextView
+            android:id="@+id/result_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/result_tv"
+            android:background="@drawable/logo_rectangle"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/splash_activity_text_size"
+            android:padding="@dimen/splash_activity_padding"
+            android:textAlignment="center"
+            android:textColor="@color/navy_blue_dark"
+            android:layout_centerInParent="true"/>
+
+    <Button
+            android:id="@+id/start_again_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:text="@string/start_again_btn_label"/>
+
+
+</RelativeLayout>

@@ -81,37 +81,12 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         val service: QuestionsService =
             RetrofitClientInstance.getRetrofitInstance()!!.create(QuestionsService::class.java)
         var call: Call<QuestionResponse> = service.getQuestions(
             20,
-            23,
-            "medium",
+            "23",
+                "medium",
             "multiple"
         )
 
