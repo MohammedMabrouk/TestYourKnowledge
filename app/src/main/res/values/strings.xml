@@ -57,6 +57,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="start_again_btn_label">Start Again</string>
     <string name="result_tv">Result: 0/0</string>
+    <string name="temp_category_label">Science &amp; Nature</string>
 
 
 </resources>

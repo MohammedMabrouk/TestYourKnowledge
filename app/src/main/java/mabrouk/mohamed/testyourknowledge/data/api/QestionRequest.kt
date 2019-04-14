@@ -1,4 +1,4 @@
-package mabrouk.mohamed.testyourknowledge.model.api
+package mabrouk.mohamed.testyourknowledge.data.api
 
 data class QuestionRequest(
     val numOfQuestions : Int,
