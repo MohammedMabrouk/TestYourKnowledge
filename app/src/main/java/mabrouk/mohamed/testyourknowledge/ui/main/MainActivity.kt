@@ -34,6 +34,9 @@ class MainActivity : AppCompatActivity() {
     var typeString = ""
     var numberOfQuestions = ""
 
+    private val mObserver: Observer<Int> = Observer { value ->
+        Log.d(TAG, "observer - x value: $value")
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,14 +45,6 @@ class MainActivity : AppCompatActivity() {
         // init
         initUi()
         qViewModel = ViewModelProviders.of(this).get(QuestionsViewModel::class.java)
-
-
-        qViewModel.numberOfQuestions
-            .observe(this, Observer { value -> Log.d(TAG, "observer - x value: $value") })
-
-        Log.v(TAG, "on Start() - x value: " + qViewModel.numberOfQuestions.value)
-
-
 
 
         startBtn.setOnClickListener {
@@ -74,7 +69,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             numberOfQuestions =
-                resources.getStringArray(mabrouk.mohamed.testyourknowledge.R.array.number_of_questions_array)[numberOfQuestionsSpinner.selectedItemPosition]
+                    resources.getStringArray(mabrouk.mohamed.testyourknowledge.R.array.number_of_questions_array)[numberOfQuestionsSpinner.selectedItemPosition]
 
             // fill request data
             qRequest = QuestionRequest(
@@ -93,10 +88,8 @@ class MainActivity : AppCompatActivity() {
 //            Log.v(TAG, "on click() - x value: " + qViewModel.getCurrentQuestionNumber().value)
 
             Log.v(TAG, "on click() - calling request")
-            qViewModel.getQuestions(qRequest)
+            qViewModel.getQuestions(qRequest).observe(this, mObserver)
         }
-
-
     }
 
     private fun initUi() {
@@ -104,7 +97,7 @@ class MainActivity : AppCompatActivity() {
         difficultySpinner = findViewById(mabrouk.mohamed.testyourknowledge.R.id.activity_main_spinner_difficulty)
         questionTypeSpinner = findViewById(mabrouk.mohamed.testyourknowledge.R.id.activity_main_spinner_questions_type)
         numberOfQuestionsSpinner =
-            findViewById(mabrouk.mohamed.testyourknowledge.R.id.activity_main_spinner_num_question)
+                findViewById(mabrouk.mohamed.testyourknowledge.R.id.activity_main_spinner_num_question)
         startBtn = findViewById(mabrouk.mohamed.testyourknowledge.R.id.activity_main_start_btn)
 
 

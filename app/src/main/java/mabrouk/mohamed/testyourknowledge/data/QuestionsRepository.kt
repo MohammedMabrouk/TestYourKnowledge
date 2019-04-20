@@ -16,9 +16,9 @@ class QuestionsRepository {
     val TAG: String = QuestionsRepository::class.java.simpleName + "TAG"
 
 
-    fun getQuestions(questionsRequest: QuestionRequest): LiveData<Int> {
+    fun getQuestions(questionsRequest: QuestionRequest): MutableLiveData<Int> {
 
-        val qcount: MutableLiveData<Int> = MutableLiveData<Int>()
+        val qcount: MutableLiveData<Int> = MutableLiveData()
         // get questions from server
         val service: QuestionsService =
             RetrofitClientInstance.getRetrofitInstance()!!.create(QuestionsService::class.java)
@@ -29,7 +29,6 @@ class QuestionsRepository {
             questionsRequest.difficulty,
             questionsRequest.questionsType
         )
-
 
         call.enqueue(object : Callback<QuestionResponse> {
             override fun onResponse(call: Call<QuestionResponse>, response: Response<QuestionResponse>) {
